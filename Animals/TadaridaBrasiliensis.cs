@@ -5,9 +5,27 @@ namespace Zoolandia.Animals
 {
     public class TadaridaBrasiliensis : Animal
     {
-        public string furColor { get; set;}
-        public int wingspan { get; set; }
-        public bool canFly { get; set; }
+        public TadaridaBrasiliensis()
+        {
+            CanFly = true;
+        }
+        public TadaridaBrasiliensis (string name)
+        {   
+            base.Name = name;
+        }
+
+        public TadaridaBrasiliensis(int numberOfWings)
+        {
+            if (numberOfWings > 0)
+            {
+                CanFly = true;
+            }
+            else
+            {
+                CanFly = false;
+            }
+        }
+
+        public bool CanFly { get; set; }   
     }
-    
 }

@@ -4,8 +4,14 @@ namespace Zoolandia.Animals
 {
     public class LemurCatta : Animal
     {
-        public string vocalization { get; set; }
-        public int tailLength { get; set; }
-        public bool canJump { get; set; }
+        public LemurCatta()
+        {
+
+        }
+
+        public LemurCatta (string name)
+        {
+            base.Name = name;
+        }
     }
 }

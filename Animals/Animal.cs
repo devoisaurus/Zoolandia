@@ -4,25 +4,29 @@ namespace Zoolandia.Animals
 {
     public class Animal
     {
-        public string name { get; set; }
-        public string food { get; set;}
-        public int weight { get; set; }
+        public string Name { get; set; }
+        public string Age { get; set;}
+        public string TypeOfFood { get; set;}
+        public int Weight { get; set; }
+        public bool isCute {get; set; }
 
-        public static void sleep()
+        public string animalIsActive { get; set;}
+
+        public virtual void AnimalSaysWhat()
         {
-            Console.WriteLine("Animal is now sleeping");
+            Console.WriteLine("What what?");
         }
 
-        public static void eat()
+        public static void AnimalEat()
         {
             Console.WriteLine("Nom nom nom");
         }
 
-        public virtual void AnimalParty()
+        public static void AnimalParty()
         {
             Console.WriteLine("WOOOOOOOO!");
-        }
-        
+        }       
+
     }
 
 }
