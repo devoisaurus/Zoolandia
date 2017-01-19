@@ -9,4 +9,5 @@ namespace Zoolandia.Animals
         public int wingspan { get; set; }
         public bool canFly { get; set; }
     }
+    
 }

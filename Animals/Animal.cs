@@ -12,6 +12,16 @@ namespace Zoolandia.Animals
         {
             Console.WriteLine("Animal is now sleeping");
         }
+
+        public static void eat()
+        {
+            Console.WriteLine("Nom nom nom");
+        }
+
+        public virtual void AnimalParty()
+        {
+            Console.WriteLine("WOOOOOOOO!");
+        }
         
     }
 

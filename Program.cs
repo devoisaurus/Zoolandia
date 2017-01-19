@@ -35,6 +35,15 @@ namespace Zoolandia
 
             Console.WriteLine($"I have a lemur named {myLemur.name}.  He weighs {myLemur.weight} lbs and has a {myLemur.tailLength} inch tail. He {myLemur.vocalization} at his friends.");
 
+            var honeyBadger = new MellivoraCapensis();
+            honeyBadger.name = "Hugo";
+            honeyBadger.doesGiveAnF = false;
+            honeyBadger.catchphrase = "'idgaf'";
+            honeyBadger.food = "honey";
+
+            Console.WriteLine($"I have a honey badger named {honeyBadger.name}. He eats {honeyBadger.food} and says {honeyBadger.catchphrase}.");
+
+            mySloth.AnimalParty();
 
         }
     }
