@@ -4,14 +4,14 @@ namespace Zoolandia.Animals
 {
     public class Animal
     {
+        //attributes common to all animals
         public string Name { get; set; }
-        public string Age { get; set;}
+        public int Age { get; set;}
         public string TypeOfFood { get; set;}
         public int Weight { get; set; }
         public bool isCute {get; set; }
 
-        public string animalIsActive { get; set;}
-
+        //virtual method to override in each class
         public virtual void AnimalSaysWhat()
         {
             Console.WriteLine("What what?");

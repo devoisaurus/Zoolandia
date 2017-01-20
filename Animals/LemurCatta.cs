@@ -6,12 +6,19 @@ namespace Zoolandia.Animals
     {
         public LemurCatta()
         {
-
+            primaryLocomotion = "jumping";
         }
+
+        public string primaryLocomotion { get; set;}
 
         public LemurCatta (string name)
         {
             base.Name = name;
+        }
+
+        public override void AnimalSaysWhat()
+        {
+            Console.WriteLine("*chitter*");
         }
     }
 }
